@@ -3,3 +3,5 @@ const swiper = new Swiper('.about-swiper', {
         el: '.about-swiper-pagination'
     }
 });
+
+ 

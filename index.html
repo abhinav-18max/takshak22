@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="./images/takshak logo.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,16 +63,25 @@
 
         <div class="hero-content">
             <div class="container">
+                
+                
                 <div class="img-container">
                     <img src="images/logo.svg" />
                 </div>
-                <p class="title">
-                    <span>Takshak'21</span>
-                    <span class="glitch" data-text="#soulsablaze">#soulsablaze</span>
-                </p>
-                <div class="button-container">
-                    <a type="button" class="btn btn-outline-warning" href="./contribute.htm">Contribute</a>
+                <div class="title">
+                    <svg viewBox="0 0 500 500">
+                        <text x="50%" y="50%" dy=".35em" font-size="larger" text-anchor="middle">
+                            Takshak'22
+                        </text>
+                    </svg>
+                
                 </div>
+               
+                <!-- <div class="button-container">
+                    <a type="button" class="btn btn-outline-warning" href="./contribute.htm">Contribute</a>
+                </div> -->
+                
+    
             </div>
         </div>
 
@@ -259,6 +269,13 @@
                 src="js/jquery.countdown.min.js circle-progress.min.js jquery.countTo.min.js custom.js.pagespeed.jc.tsH_nc519m.js"></script>
             <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
             <script src="./script.js"></script>
+            <script type="text/javascript">
+               const bg=document.getElementsByClassName('hero-content .container');
+               window.addEventListener('scroll',function(){
+                  bg.style.backgroundSize = + window.pageYOffset+'%';
+               })
+               
+            </script>
 </body>
 
 </html>
